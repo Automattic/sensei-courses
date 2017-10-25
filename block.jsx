@@ -8,6 +8,7 @@ registerBlockType( 'sensei/courses', {
 	title: 'Courses',
 	icon: 'book-alt',
 	category: 'widgets',
+	supportHTML: false,
 	attributes: {
 		exclude: { type: 'string' },
 		ids: { type: 'string' },
