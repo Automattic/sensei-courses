@@ -19,7 +19,7 @@ registerBlockType( 'sensei/courses', {
 		const ids = get( props, [ 'attributes', 'ids' ] );
 
 		return {
-			courses: `/wp/v2/courses?_embed${ ids ? '&include=' + ids: '' }`,
+			courses: '/sensei/v1/courses',
 			categories: '/wp/v2/course-category',
 		};
 	} )( props => {
